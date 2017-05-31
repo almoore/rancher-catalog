@@ -15,7 +15,7 @@ kubelet:
         - --register-node=true
         - --cloud-provider=${CLOUD_PROVIDER}
         - --healthz-bind-address=0.0.0.0
-        - --cluster-dns=10.43.0.10
+        - --cluster-dns=192.168.0.10
         - --cluster-domain=cluster.local
         - --network-plugin=cni
         - --network-plugin-dir=/etc/cni/managed.d
@@ -96,7 +96,7 @@ kubernetes:
         io.rancher.sidekicks: kube-hostname-updater
     command:
         - kube-apiserver
-        - --service-cluster-ip-range=10.43.0.0/16
+        - --service-cluster-ip-range=192.168.0.0/16
         - --etcd-servers=http://etcd.kubernetes.rancher.internal:2379
         - --insecure-bind-address=0.0.0.0
         - --insecure-port=80
