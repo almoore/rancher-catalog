@@ -10,4 +10,5 @@ If you set the "Plane Isolation" field to `required`, the host labels, `compute=
 
 ### KubeDNS
 
-KubeDNS is enabled for name resolution as described in the [Kubernetes DNS docs](http://kubernetes.io/docs/admin/dns/). The DNS service IP address is `10.43.0.10`.
+KubeDNS is enabled for name resolution as described in the [Kubernetes DNS docs](http://kubernetes.io/docs/admin/dns/). The DNS service IP address is `192.168.0.10`.
+
