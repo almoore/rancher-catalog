@@ -82,7 +82,7 @@
 kubernetes:
     metadata:
         sans:
-        - "IP:10.43.0.1"
+        - "IP:192.168.0.1"
     health_check:
         request_line: GET /healthz HTTP/1.0
         port: 80
